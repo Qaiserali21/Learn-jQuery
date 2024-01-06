@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn jQuery Basic Syntax</title>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+
+  <style>
+    #test1{
+        border: 3px solid black;
+        width: 20%;
+        height: 50%;
+        background: pink;
+        margin-left: 200px;
+        float: left;
+    }
+
+    #test2{
+        border: 3px solid black;
+        width: 20%;
+        height: 50%;
+        background: yellowgreen;
+        margin-right: 200px;
+        float: right;
+    }
+  </style>
+</head>
+<body>
+    <h1>jQuery Basic Syntax</h1>
+    <div id="test1">
+        <h3>Test 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio omnis non consequuntur animi tenetur nam vero iusto, dolore reprehenderit inventore!</p>
+    </div>
+
+    <div id="test2">
+        <h3>Test 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis maxime quam delectus nostrum nobis molestiae magnam quia aut eos!</p>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var a = $('#test1').html();
+            console.log(a);
+
+            var b = $('#test2').html();
+            console.log(b);
+        });
+    </script>
+</body>
+</html>
